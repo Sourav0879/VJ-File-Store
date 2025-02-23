@@ -18,13 +18,13 @@ def is_enabled(value, default):
         return default
       
 # Bot Information
-API_ID = int(environ.get("API_ID", "21100083"))
-API_HASH = environ.get("API_HASH", "8980ecdc34880454c2e31eec10033f5b")
+API_ID = int(environ.get("API_ID", "24579269"))
+API_HASH = environ.get("API_HASH", "99dff6c471774c2be6ff3d4623a6c0c0")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://telegra.ph/file/7c8c29049219225761f83.jpg https://telegra.ph/file/427676dd1e7a575e4ada1.jpg https://telegra.ph/file/672e91401d19e81f3d03d.jpg https://telegra.ph/file/01a544a71e921f4e60129.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "") # without @
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6366880905 7023006442').split()]
+BOT_USERNAME = environ.get("BOT_USERNAME", "sbfilestorerobot") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
@@ -35,7 +35,7 @@ CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
 CDB_NAME = environ.get("CDB_NAME", "clonetechvj")
 
 # Database Information
-DB_URI = environ.get("DB_URI", "")
+DB_URI = environ.get("DB_URI", "mongodb+srv://emmansantoa3:SmaI5gdhayWFzouF@cluster0.ri0swli.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = environ.get("DB_NAME", "techvjbotz")
 
 # Auto Delete Information
@@ -46,28 +46,28 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002162133511"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 
 # Enable - True or Disable - False
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), False)
 
 # Verify Info :-
-VERIFY_MODE = bool(environ.get('VERIFY_MODE', False)) # Set True or False
+VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "") # shortlink domain without https://
-SHORTLINK_API = environ.get("SHORTLINK_API", "") # shortlink api
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "teraboxlinks.com") # shortlink domain without https://
+SHORTLINK_API = environ.get("SHORTLINK_API", "b57ccfed13ee9181996d70b2aa66a2880a867b6f") # shortlink api
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/how_to_download_moviezone/6") # how to open link 
 
 # Website Info:
-WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', False)) # Set True or False
+WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', True)) # Set True or False
 
 # If Website Url Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-WEBSITE_URL = environ.get("WEBSITE_URL", "") # For More Information Check Video On Yt - @Tech_VJ
+WEBSITE_URL = environ.get("WEBSITE_URL", "https://moviezonefile.blogspot.com/2024/07/moviezonefile.html") # For More Information Check Video On Yt - @Tech_VJ
 
 # File Stream Config
 STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
