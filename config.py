@@ -18,11 +18,11 @@ def is_enabled(value, default):
         return default
       
 # Bot Information
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
+API_ID = int(environ.get("API_ID", "21100083"))
+API_HASH = environ.get("API_HASH", "8980ecdc34880454c2e31eec10033f5b")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://telegra.ph/file/7c8c29049219225761f83.jpg https://telegra.ph/file/427676dd1e7a575e4ada1.jpg https://telegra.ph/file/672e91401d19e81f3d03d.jpg https://telegra.ph/file/01a544a71e921f4e60129.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "") # without @
 PORT = environ.get("PORT", "8080")
